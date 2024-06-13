@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Book</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body class="font-newYork bg-white text-black">
+    <div class="container mx-auto px-4">
+        <h1 class="text-6xl font-bold mb-8">Choose your Book</h1>
+        <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="p-4 shadow-lg rounded-lg">
+                <h2 class="text-5xl">Top 1</h2>
+                <p>书名和排名1</p>
+            </div>
+            <div class="p-4 shadow-lg rounded-lg">
+                <h2 class="text-5xl">Top 2</h2>
+                <p>论语</p>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-4xl mb-4">Loading...</h3>
+        </div>
+        <div>
+            <!-- Shadcn UI Accordion -->
+            <accordion type="single" collapsible>
+                <accordion-item value="item-1">
+                    <accordion-trigger>Is it accessible?</accordion-trigger>
+                    <accordion-content>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                    </accordion-content>
+                </accordion-item>
+            </accordion>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@shadcn/ui"></script>
+</body>
+</html>
